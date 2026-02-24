@@ -236,8 +236,8 @@ const projects = [
         metrics: "Brand Awareness | Parenting",
         mediaUrl: "https://i.imgur.com/g3tTn0b.png",
         links: [
-            { label: "Episode 1", url: "https://www.instagram.com/reel/DIal5EFBA2b/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
-            { label: "Episode 2", url: "https://www.instagram.com/reel/DMFzxdgSerG/" }
+            { label: "Episode 1", url: "https://www.instagram.com/p/DMFzxdgSerG/" },
+            { label: "Episode 2", url: "https://www.instagram.com/p/DMNDrk5hnKJ/" }
        ],
         tags: ["FMCG", "Reels", "Parenting"],
         isVideo: false
@@ -520,9 +520,9 @@ const CVSection = ({ lang, t }) => (
         <div className="container mx-auto px-6 max-w-5xl">
             <div className="flex justify-between items-center mb-10 border-b border-slate-100 pb-6">
                 <h2 className="text-3xl font-serif-display font-bold text-slate-900">{t.cv.title}</h2>
-                <button className="flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition shadow-lg hover:shadow-xl">
+                <a href="/May_Chan_CV.pdf" download="May_Chan_CV.pdf" className="flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-blue-700 transition shadow-lg hover:shadow-blue-500/30">
                     <Download size={16} /> {t.cv.download}
-                </button>
+                </a>
             </div>
 
             <div className="grid md:grid-cols-3 gap-12">
